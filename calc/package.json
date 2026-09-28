@@ -4,7 +4,7 @@
   "description": "Внутренний калькулятор стоимости стеклянных и алюминиевых конструкций",
   "author": "Glass & Alum Constructions",
   "main": "src/main.js",
-  "license": "MIT",
+  "license": "UNLICENSED",
   "scripts": {
     "start": "electron .",
     "dist": "electron-builder --win",
