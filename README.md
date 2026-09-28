@@ -38,3 +38,5 @@
 - Telegram: [https://t.me/Dariodora](https://t.me/Dariodora)
 - Почта: [daksidiane@gmail.com](mailto:daksidiane@gmail.com)
 - LinkedIn: [https://www.linkedin.com/in/daria-danilko-8b7a081b5](https://www.linkedin.com/in/daria-danilko-8b7a081b5)
+
+![Калькулятор смет и генератор коммерческих предложений](https://raw.githubusercontent.com/daksidiane/daksidiane/main/assets/estimate-calculator.gif)
