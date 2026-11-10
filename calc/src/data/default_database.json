@@ -1,0 +1,859 @@
+{
+ "updatedAt": "2026-11-10T11:17:22.495237+00:00",
+ "yandexUrl": "",
+ "sourceFile": "calculator_database.xlsx",
+ "constructions": [
+  {
+   "ID": 1,
+   "Code": "WINDOW",
+   "Name": "Окно",
+   "Description": "Стандартное окно",
+   "BasePrice": 0,
+   "IsActive": true
+  },
+  {
+   "ID": 2,
+   "Code": "DOOR",
+   "Name": "Дверь",
+   "Description": "Входная/межкомнатная дверь",
+   "BasePrice": 0,
+   "IsActive": true
+  },
+  {
+   "ID": 3,
+   "Code": "FACADE",
+   "Name": "Фасад",
+   "Description": "Фасадная система",
+   "BasePrice": 0,
+   "IsActive": true
+  },
+  {
+   "ID": 4,
+   "Code": "PARTITION",
+   "Name": "Перегородка",
+   "Description": "Внутренняя перегородка",
+   "BasePrice": 0,
+   "IsActive": true
+  },
+  {
+   "ID": 5,
+   "Code": "BALCONY",
+   "Name": "Балкон",
+   "Description": "Балконное остекление",
+   "BasePrice": 0,
+   "IsActive": true
+  },
+  {
+   "ID": 6,
+   "Code": "SHOWER",
+   "Name": "Душевая кабина",
+   "Description": "Стеклянная душевая кабина",
+   "BasePrice": 0,
+   "IsActive": true
+  }
+ ],
+ "components": {
+  "GLASS": [
+   {
+    "ID": 1,
+    "Category": "GLASS",
+    "Code": "GL-001",
+    "Name": "Стекло 4мм",
+    "Description": "Прозрачное стекло 4мм",
+    "Unit": "м²",
+    "Price": 850,
+    "MinPrice": 850,
+    "MaxPrice": 850,
+    "IsActive": true,
+    "CreatedDate": "2026-01-01"
+   },
+   {
+    "ID": 2,
+    "Category": "GLASS",
+    "Code": "GL-002",
+    "Name": "Стекло 6мм",
+    "Description": "Прозрачное стекло 6мм",
+    "Unit": "м²",
+    "Price": 1200,
+    "MinPrice": 1200,
+    "MaxPrice": 1200,
+    "IsActive": true,
+    "CreatedDate": "2026-01-01"
+   },
+   {
+    "ID": 3,
+    "Category": "GLASS",
+    "Code": "GL-003",
+    "Name": "Стекло 8мм",
+    "Description": "Прозрачное стекло 8мм",
+    "Unit": "м²",
+    "Price": 1650,
+    "MinPrice": 1650,
+    "MaxPrice": 1650,
+    "IsActive": true,
+    "CreatedDate": "2026-01-01"
+   },
+   {
+    "ID": 4,
+    "Category": "GLASS",
+    "Code": "GL-004",
+    "Name": "Стекло 10мм",
+    "Description": "Прозрачное стекло 10мм",
+    "Unit": "м²",
+    "Price": 2100,
+    "MinPrice": 2100,
+    "MaxPrice": 2100,
+    "IsActive": true,
+    "CreatedDate": "2026-01-01"
+   },
+   {
+    "ID": 5,
+    "Category": "GLASS",
+    "Code": "GL-005",
+    "Name": "Тонированное 4мм",
+    "Description": "Тонированное стекло 4мм",
+    "Unit": "м²",
+    "Price": 1100,
+    "MinPrice": 1100,
+    "MaxPrice": 1100,
+    "IsActive": true,
+    "CreatedDate": "2026-01-01"
+   },
+   {
+    "ID": 6,
+    "Category": "GLASS",
+    "Code": "GL-006",
+    "Name": "Закаленное 6мм",
+    "Description": "Закаленное стекло 6мм",
+    "Unit": "м²",
+    "Price": 1800,
+    "MinPrice": 1800,
+    "MaxPrice": 1800,
+    "IsActive": true,
+    "CreatedDate": "2026-01-01"
+   },
+   {
+    "ID": 7,
+    "Category": "GLASS",
+    "Code": "GL-007",
+    "Name": "Закаленное 8мм",
+    "Description": "Закаленное стекло 8мм",
+    "Unit": "м²",
+    "Price": 2400,
+    "MinPrice": 2400,
+    "MaxPrice": 2400,
+    "IsActive": true,
+    "CreatedDate": "2026-01-01"
+   },
+   {
+    "ID": 8,
+    "Category": "GLASS",
+    "Code": "GL-008",
+    "Name": "Триплекс 4.4.2",
+    "Description": "Многослойное стекло",
+    "Unit": "м²",
+    "Price": 2800,
+    "MinPrice": 2800,
+    "MaxPrice": 2800,
+    "IsActive": true,
+    "CreatedDate": "2026-01-01"
+   },
+   {
+    "ID": 9,
+    "Category": "GLASS",
+    "Code": "GL-009",
+    "Name": "Триплекс 6.6.2",
+    "Description": "Многослойное стекло усиленное",
+    "Unit": "м²",
+    "Price": 3500,
+    "MinPrice": 3500,
+    "MaxPrice": 3500,
+    "IsActive": true,
+    "CreatedDate": "2026-01-01"
+   },
+   {
+    "ID": 10,
+    "Category": "GLASS",
+    "Code": "GL-010",
+    "Name": "Энергосберегающее",
+    "Description": "i-стекло с покрытием",
+    "Unit": "м²",
+    "Price": 1950,
+    "MinPrice": 1950,
+    "MaxPrice": 1950,
+    "IsActive": true,
+    "CreatedDate": "2026-01-01"
+   }
+  ],
+  "PROFILE": [
+   {
+    "ID": 11,
+    "Category": "PROFILE",
+    "Code": "PR-001",
+    "Name": "Alumil A150",
+    "Description": "Алюминиевый профиль холодный",
+    "Unit": "пог.м",
+    "Price": 450,
+    "MinPrice": 450,
+    "MaxPrice": 450,
+    "IsActive": true,
+    "CreatedDate": "2026-01-01"
+   },
+   {
+    "ID": 12,
+    "Category": "PROFILE",
+    "Code": "PR-002",
+    "Name": "Alumil A250",
+    "Description": "Алюминиевый профиль теплый",
+    "Unit": "пог.м",
+    "Price": 680,
+    "MinPrice": 680,
+    "MaxPrice": 680,
+    "IsActive": true,
+    "CreatedDate": "2026-01-01"
+   },
+   {
+    "ID": 13,
+    "Category": "PROFILE",
+    "Code": "PR-003",
+    "Name": "Schuco AWS",
+    "Description": "Система Schuco AWS",
+    "Unit": "пог.м",
+    "Price": 950,
+    "MinPrice": 950,
+    "MaxPrice": 950,
+    "IsActive": true,
+    "CreatedDate": "2026-01-01"
+   },
+   {
+    "ID": 14,
+    "Category": "PROFILE",
+    "Code": "PR-004",
+    "Name": "Reynaers CP155",
+    "Description": "Фасадная система",
+    "Unit": "пог.м",
+    "Price": 1200,
+    "MinPrice": 1200,
+    "MaxPrice": 1200,
+    "IsActive": true,
+    "CreatedDate": "2026-01-01"
+   },
+   {
+    "ID": 15,
+    "Category": "PROFILE",
+    "Code": "PR-005",
+    "Name": "Provedal P3",
+    "Description": "Раздвижная система",
+    "Unit": "пог.м",
+    "Price": 520,
+    "MinPrice": 520,
+    "MaxPrice": 520,
+    "IsActive": true,
+    "CreatedDate": "2026-01-01"
+   },
+   {
+    "ID": 16,
+    "Category": "PROFILE",
+    "Code": "PR-006",
+    "Name": "Alutech F50",
+    "Description": "Фасадная система",
+    "Unit": "пог.м",
+    "Price": 750,
+    "MinPrice": 750,
+    "MaxPrice": 750,
+    "IsActive": true,
+    "CreatedDate": "2026-01-01"
+   }
+  ],
+  "HARDWARE": [
+   {
+    "ID": 17,
+    "Category": "HARDWARE",
+    "Code": "HW-001",
+    "Name": "Петля стандарт",
+    "Description": "Петля для окон/дверей",
+    "Unit": "шт",
+    "Price": 250,
+    "MinPrice": 250,
+    "MaxPrice": 250,
+    "IsActive": true,
+    "CreatedDate": "2026-01-01"
+   },
+   {
+    "ID": 18,
+    "Category": "HARDWARE",
+    "Code": "HW-002",
+    "Name": "Петля усиленная",
+    "Description": "Усиленная петля",
+    "Unit": "шт",
+    "Price": 450,
+    "MinPrice": 450,
+    "MaxPrice": 450,
+    "IsActive": true,
+    "CreatedDate": "2026-01-01"
+   },
+   {
+    "ID": 19,
+    "Category": "HARDWARE",
+    "Code": "HW-003",
+    "Name": "Ручка поворотная",
+    "Description": "Ручка оконная",
+    "Unit": "шт",
+    "Price": 350,
+    "MinPrice": 350,
+    "MaxPrice": 350,
+    "IsActive": true,
+    "CreatedDate": "2026-01-01"
+   },
+   {
+    "ID": 20,
+    "Category": "HARDWARE",
+    "Code": "HW-004",
+    "Name": "Ручка-кнопка",
+    "Description": "Ручка для дверей",
+    "Unit": "шт",
+    "Price": 280,
+    "MinPrice": 280,
+    "MaxPrice": 280,
+    "IsActive": true,
+    "CreatedDate": "2026-01-01"
+   },
+   {
+    "ID": 21,
+    "Category": "HARDWARE",
+    "Code": "HW-005",
+    "Name": "Замок многозапорный",
+    "Description": "Многоточечный замок",
+    "Unit": "шт",
+    "Price": 1850,
+    "MinPrice": 1850,
+    "MaxPrice": 1850,
+    "IsActive": true,
+    "CreatedDate": "2026-01-01"
+   },
+   {
+    "ID": 22,
+    "Category": "HARDWARE",
+    "Code": "HW-006",
+    "Name": "Защелка",
+    "Description": "Дверная защелка",
+    "Unit": "шт",
+    "Price": 180,
+    "MinPrice": 180,
+    "MaxPrice": 180,
+    "IsActive": true,
+    "CreatedDate": "2026-01-01"
+   },
+   {
+    "ID": 23,
+    "Category": "HARDWARE",
+    "Code": "HW-007",
+    "Name": "Доводчик",
+    "Description": "Дверной доводчик",
+    "Unit": "шт",
+    "Price": 2400,
+    "MinPrice": 2400,
+    "MaxPrice": 2400,
+    "IsActive": true,
+    "CreatedDate": "2026-01-01"
+   },
+   {
+    "ID": 24,
+    "Category": "HARDWARE",
+    "Code": "HW-008",
+    "Name": "Уплотнитель",
+    "Description": "Резиновый уплотнитель",
+    "Unit": "пог.м",
+    "Price": 45,
+    "MinPrice": 45,
+    "MaxPrice": 45,
+    "IsActive": true,
+    "CreatedDate": "2026-01-01"
+   },
+   {
+    "ID": 25,
+    "Category": "HARDWARE",
+    "Code": "HW-009",
+    "Name": "Уголок соединительный",
+    "Description": "Уголок 90 градусов",
+    "Unit": "шт",
+    "Price": 120,
+    "MinPrice": 120,
+    "MaxPrice": 120,
+    "IsActive": true,
+    "CreatedDate": "2026-01-01"
+   },
+   {
+    "ID": 26,
+    "Category": "HARDWARE",
+    "Code": "HW-010",
+    "Name": "Ролики раздвижные",
+    "Description": "Комплект роликов",
+    "Unit": "комплект",
+    "Price": 650,
+    "MinPrice": 650,
+    "MaxPrice": 650,
+    "IsActive": true,
+    "CreatedDate": "2026-01-01"
+   }
+  ]
+ },
+ "additionalWorks": [
+  {
+   "ID": 1,
+   "Code": "AW-001",
+   "Name": "Герметизация",
+   "Description": "Герметизация швов силиконом",
+   "Unit": "пог.м",
+   "Price": 150,
+   "CalculationType": "PER_METER",
+   "IsActive": true
+  },
+  {
+   "ID": 2,
+   "Code": "AW-002",
+   "Name": "Установка отлива",
+   "Description": "Монтаж водоотлива",
+   "Unit": "шт",
+   "Price": 450,
+   "CalculationType": "FIXED",
+   "IsActive": true
+  },
+  {
+   "ID": 3,
+   "Code": "AW-003",
+   "Name": "Установка подоконника",
+   "Description": "Монтаж подоконника",
+   "Unit": "шт",
+   "Price": 800,
+   "CalculationType": "FIXED",
+   "IsActive": true
+  },
+  {
+   "ID": 4,
+   "Code": "AW-004",
+   "Name": "Откосы пластиковые",
+   "Description": "Установка пластиковых откосов",
+   "Unit": "пог.м",
+   "Price": 550,
+   "CalculationType": "PER_METER",
+   "IsActive": true
+  },
+  {
+   "ID": 5,
+   "Code": "AW-005",
+   "Name": "Откосы гипсокартон",
+   "Description": "Установка ГКЛ откосов",
+   "Unit": "пог.м",
+   "Price": 650,
+   "CalculationType": "PER_METER",
+   "IsActive": true
+  },
+  {
+   "ID": 6,
+   "Code": "AW-006",
+   "Name": "Москитная сетка",
+   "Description": "Изготовление и установка",
+   "Unit": "шт",
+   "Price": 1200,
+   "CalculationType": "FIXED",
+   "IsActive": true
+  },
+  {
+   "ID": 7,
+   "Code": "AW-007",
+   "Name": "Ламинация профиля",
+   "Description": "Цветная ламинация",
+   "Unit": "м²",
+   "Price": 850,
+   "CalculationType": "PER_SQM",
+   "IsActive": true
+  },
+  {
+   "ID": 8,
+   "Code": "AW-008",
+   "Name": "Покраска профиля",
+   "Description": "Порошковая покраска",
+   "Unit": "м²",
+   "Price": 950,
+   "CalculationType": "PER_SQM",
+   "IsActive": true
+  },
+  {
+   "ID": 9,
+   "Code": "AW-009",
+   "Name": "Сверление отверстий",
+   "Description": "Дополнительные отверстия",
+   "Unit": "шт",
+   "Price": 200,
+   "CalculationType": "FIXED",
+   "IsActive": true
+  },
+  {
+   "ID": 10,
+   "Code": "AW-010",
+   "Name": "Усиление конструкции",
+   "Description": "Дополнительное усиление",
+   "Unit": "шт",
+   "Price": 1500,
+   "CalculationType": "FIXED",
+   "IsActive": true
+  }
+ ],
+ "services": [
+  {
+   "ID": 1,
+   "Code": "SRV-001",
+   "Name": "Замер",
+   "Description": "Выезд замерщика",
+   "Unit": "выезд",
+   "Price": 0,
+   "MinPrice": 1000,
+   "CalculationType": "FIXED_MIN",
+   "IsActive": true
+  },
+  {
+   "ID": 2,
+   "Code": "SRV-002",
+   "Name": "Доставка",
+   "Description": "Доставка материалов",
+   "Unit": "рейс",
+   "Price": 1500,
+   "MinPrice": 1500,
+   "CalculationType": "FIXED",
+   "IsActive": true
+  },
+  {
+   "ID": 3,
+   "Code": "SRV-003",
+   "Name": "Доставка срочная",
+   "Description": "Срочная доставка день в день",
+   "Unit": "рейс",
+   "Price": 2500,
+   "MinPrice": 2500,
+   "CalculationType": "FIXED",
+   "IsActive": true
+  },
+  {
+   "ID": 4,
+   "Code": "SRV-004",
+   "Name": "Подъем на этаж",
+   "Description": "Подъем материалов",
+   "Unit": "этаж",
+   "Price": 200,
+   "MinPrice": 200,
+   "CalculationType": "PER_FLOOR",
+   "IsActive": true
+  },
+  {
+   "ID": 5,
+   "Code": "SRV-005",
+   "Name": "Монтаж окна",
+   "Description": "Установка окна",
+   "Unit": "шт",
+   "Price": 2500,
+   "MinPrice": 2500,
+   "CalculationType": "FIXED",
+   "IsActive": true
+  },
+  {
+   "ID": 6,
+   "Code": "SRV-006",
+   "Name": "Монтаж двери",
+   "Description": "Установка двери",
+   "Unit": "шт",
+   "Price": 3500,
+   "MinPrice": 3500,
+   "CalculationType": "FIXED",
+   "IsActive": true
+  },
+  {
+   "ID": 7,
+   "Code": "SRV-007",
+   "Name": "Монтаж фасада",
+   "Description": "Установка фасадной системы",
+   "Unit": "м²",
+   "Price": 1800,
+   "MinPrice": 1800,
+   "CalculationType": "PER_SQM",
+   "IsActive": true
+  },
+  {
+   "ID": 8,
+   "Code": "SRV-008",
+   "Name": "Монтаж перегородки",
+   "Description": "Установка перегородки",
+   "Unit": "м²",
+   "Price": 1500,
+   "MinPrice": 1500,
+   "CalculationType": "PER_SQM",
+   "IsActive": true
+  },
+  {
+   "ID": 9,
+   "Code": "SRV-009",
+   "Name": "Демонтаж",
+   "Description": "Демонтаж старых конструкций",
+   "Unit": "шт",
+   "Price": 800,
+   "MinPrice": 800,
+   "CalculationType": "FIXED",
+   "IsActive": true
+  },
+  {
+   "ID": 10,
+   "Code": "SRV-010",
+   "Name": "Консультация",
+   "Description": "Техническая консультация",
+   "Unit": "час",
+   "Price": 1000,
+   "MinPrice": 1000,
+   "CalculationType": "PER_HOUR",
+   "IsActive": true
+  }
+ ],
+ "discounts": [
+  {
+   "ID": 1,
+   "Code": "DISC-001",
+   "Name": "Опт 10%",
+   "Description": "Скидка при заказе от 100000",
+   "DiscountPercent": 10,
+   "MinAmount": 100000,
+   "MaxAmount": null,
+   "ApplicableTo": "ALL",
+   "IsActive": true,
+   "ValidFrom": "2026-01-01",
+   "ValidTo": "2026-12-31"
+  },
+  {
+   "ID": 2,
+   "Code": "DISC-002",
+   "Name": "Опт 15%",
+   "Description": "Скидка при заказе от 200000",
+   "DiscountPercent": 15,
+   "MinAmount": 200000,
+   "MaxAmount": null,
+   "ApplicableTo": "ALL",
+   "IsActive": true,
+   "ValidFrom": "2026-01-01",
+   "ValidTo": "2026-12-31"
+  },
+  {
+   "ID": 3,
+   "Code": "DISC-003",
+   "Name": "Опт 20%",
+   "Description": "Скидка при заказе от 500000",
+   "DiscountPercent": 20,
+   "MinAmount": 500000,
+   "MaxAmount": null,
+   "ApplicableTo": "ALL",
+   "IsActive": true,
+   "ValidFrom": "2026-01-01",
+   "ValidTo": "2026-12-31"
+  },
+  {
+   "ID": 4,
+   "Code": "DISC-004",
+   "Name": "Постоянный клиент",
+   "Description": "Скидка постоянным клиентам",
+   "DiscountPercent": 5,
+   "MinAmount": 0,
+   "MaxAmount": null,
+   "ApplicableTo": "ALL",
+   "IsActive": true,
+   "ValidFrom": "2026-01-01",
+   "ValidTo": "2026-12-31"
+  },
+  {
+   "ID": 5,
+   "Code": "DISC-005",
+   "Name": "Акция весна",
+   "Description": "Сезонная акция",
+   "DiscountPercent": 7,
+   "MinAmount": 50000,
+   "MaxAmount": 15,
+   "ApplicableTo": "WINDOW",
+   "IsActive": true,
+   "ValidFrom": "2026-03-01",
+   "ValidTo": "2026-05-31"
+  },
+  {
+   "ID": 6,
+   "Code": "DISC-006",
+   "Name": "Комплексный заказ",
+   "Description": "При заказе 3+ конструкций",
+   "DiscountPercent": 12,
+   "MinAmount": 0,
+   "MaxAmount": null,
+   "ApplicableTo": "ALL",
+   "IsActive": true,
+   "ValidFrom": "2026-01-01",
+   "ValidTo": "2026-12-31"
+  }
+ ],
+ "coefficients": [
+  {
+   "ID": 1,
+   "Code": "COEF-001",
+   "Name": "Срочность x1.5",
+   "Description": "Срочное изготовление",
+   "Coefficient": 1.5,
+   "ApplicableTo": "ALL",
+   "IsActive": true
+  },
+  {
+   "ID": 2,
+   "Code": "COEF-002",
+   "Name": "Сложная форма",
+   "Description": "Нестандартная форма",
+   "Coefficient": 1.3,
+   "ApplicableTo": "ALL",
+   "IsActive": true
+  },
+  {
+   "ID": 3,
+   "Code": "COEF-003",
+   "Name": "Большой размер",
+   "Description": "Конструкция > 5м²",
+   "Coefficient": 1.15,
+   "ApplicableTo": "ALL",
+   "IsActive": true
+  },
+  {
+   "ID": 4,
+   "Code": "COEF-004",
+   "Name": "Малый размер",
+   "Description": "Конструкция < 0.5м²",
+   "Coefficient": 1.4,
+   "ApplicableTo": "ALL",
+   "IsActive": true
+  },
+  {
+   "ID": 5,
+   "Code": "COEF-005",
+   "Name": "Высотные работы",
+   "Description": "Работа на высоте > 10м",
+   "Coefficient": 1.25,
+   "ApplicableTo": "MOUNTING",
+   "IsActive": true
+  },
+  {
+   "ID": 6,
+   "Code": "COEF-006",
+   "Name": "Зимний коэффициент",
+   "Description": "Работа в зимний период",
+   "Coefficient": 1.1,
+   "ApplicableTo": "MOUNTING",
+   "IsActive": true
+  }
+ ],
+ "formulas": [
+  {
+   "ID": 1,
+   "ConstructionType": "WINDOW",
+   "FormulaName": "AREA",
+   "Formula": "WIDTH * HEIGHT",
+   "Description": "Площадь окна"
+  },
+  {
+   "ID": 2,
+   "ConstructionType": "WINDOW",
+   "FormulaName": "GLASS_COST",
+   "Formula": "AREA * GLASS_PRICE",
+   "Description": "Стоимость стекла"
+  },
+  {
+   "ID": 3,
+   "ConstructionType": "WINDOW",
+   "FormulaName": "PROFILE_COST",
+   "Formula": "PERIMETER * PROFILE_PRICE",
+   "Description": "Стоимость профиля"
+  },
+  {
+   "ID": 4,
+   "ConstructionType": "WINDOW",
+   "FormulaName": "TOTAL",
+   "Formula": "GLASS_COST + PROFILE_COST + HARDWARE_COST",
+   "Description": "Итого по окну"
+  },
+  {
+   "ID": 5,
+   "ConstructionType": "DOOR",
+   "FormulaName": "AREA",
+   "Formula": "WIDTH * HEIGHT",
+   "Description": "Площадь двери"
+  },
+  {
+   "ID": 6,
+   "ConstructionType": "DOOR",
+   "FormulaName": "TOTAL",
+   "Formula": "AREA * PRICE_PER_SQM + HARDWARE_COST",
+   "Description": "Итого по двери"
+  },
+  {
+   "ID": 7,
+   "ConstructionType": "FACADE",
+   "FormulaName": "AREA",
+   "Formula": "WIDTH * HEIGHT",
+   "Description": "Площадь фасада"
+  },
+  {
+   "ID": 8,
+   "ConstructionType": "FACADE",
+   "FormulaName": "TOTAL",
+   "Formula": "AREA * SYSTEM_PRICE + GLASS_COST + MOUNTING_COST",
+   "Description": "Итого по фасаду"
+  }
+ ],
+ "units": [
+  {
+   "ID": 1,
+   "Code": "PCS",
+   "Name": "Штука",
+   "Description": "Количество штук"
+  },
+  {
+   "ID": 2,
+   "Code": "SQM",
+   "Name": "Квадратный метр",
+   "Description": "Площадь в м²"
+  },
+  {
+   "ID": 3,
+   "Code": "LM",
+   "Name": "Погонный метр",
+   "Description": "Длина в погонных метрах"
+  },
+  {
+   "ID": 4,
+   "Code": "M",
+   "Name": "Метр",
+   "Description": "Длина в метрах"
+  },
+  {
+   "ID": 5,
+   "Code": "SET",
+   "Name": "Комплект",
+   "Description": "Комплект изделий"
+  },
+  {
+   "ID": 6,
+   "Code": "HOUR",
+   "Name": "Час",
+   "Description": "Время в часах"
+  },
+  {
+   "ID": 7,
+   "Code": "FLOOR",
+   "Name": "Этаж",
+   "Description": "Количество этажей"
+  },
+  {
+   "ID": 8,
+   "Code": "FIXED",
+   "Name": "Фиксировано",
+   "Description": "Фиксированная цена"
+  }
+ ]
+}
